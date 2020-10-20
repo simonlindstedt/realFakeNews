@@ -3,110 +3,132 @@
 declare(strict_types=1);
 
 $authors = [
-  [
-    'id' => 1,
-    'name' => 'Stefan Lövfen',
-  ],
-  [
-    'id' => 2,
-    'name' => 'Fredrik Reinfeldt',
-  ],
-  [
-    'id' => 3,
-    'name' => 'Göran Persson',
-  ],
-  [
-    'id' => 4,
-    'name' => 'Carl Bildt',
-  ],
-  [
-    'id' => 5,
-    'name' => 'Ingvar Carlsson',
-  ],
+  ['ID' => 1, 'name' => 'Marlow Stroban'],
+  ['ID' => 2, 'name' => 'Theodor Drewes'],
+  ['ID' => 3, 'name' => 'Rog Cargenven'],
+  ['ID' => 4, 'name' => 'Clemmie Kail'],
+  ['ID' => 5, 'name' => 'Ali Serrell'],
 ];
 
 $articles = [
   [
-    'author_id' => 1,
-    'title' => 'En dag i lorem',
-    'content' => 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, incidunt sit consectetur impedit nisi reiciendis, a, unde quia perferendis ducimus reprehenderit in harum. Consequuntur placeat assumenda laboriosam exercitationem esse illum consectetur soluta autem labore. Hic dolor, reprehenderit suscipit mollitia voluptates possimus minima, commodi a culpa voluptas distinctio eius minus eligendi.',
-    'author_name' => 'Stefan Lövfen',
-    'publication_date' => '2020-10-19',
-    'likes' => 23,
-    'image' => 'https://picsum.photos/seed/picsum/1000',
-  ],
-  [
-    'author_id' => 1,
-    'title' => 'En natt i lorem',
-    'content' => 'I augusti körde den tidigare Tre Kronor-hjälten på E18 i sin bil. Färden gick långsamt och vingligt innan den fick ett abrupt slut mot ett mitträcke.
-
-    Ett vittne till krocken gick fram till bilen och fann Tommy Salo, 49, sovandes och okontaktbar. Senare visade det sig att den forne NHL-spelaren hade 3,06 promille i blodet – gränsen för grovt rattfylleri är 1,0 promille.
-
-    Träder fram
-    Nu, månader efter rattfyllan, träder Tommy Salo fram och ber om ursäkt för den vingliga bilfärden. På Facebook skriver han det går att skylla på allt möjligt, men att han inte tänker göra det.
-
-    – Det finns inga ursäkter för vad jag gjorde.
-
-    Åtalad för rattfylleri
-    Enligt förundersökningsprotokollet drack Tommy Salo stora mängder alkohol under flera dagar och på dagen för den vingliga färden stannade han flera gånger för att dricka ”shots”.
-
-    Salo, som erkände brottet på plats, är nu åtalad för grovt rattfylleri och har fått körkortet indraget. Brottet kan ge fängelse upp till två år.
-
-    – Det här var droppen. Det blir ingen mer alkohol för mig, skriver han på Facebook.
-
-    Får stöd på Facebook
-    Kommentarerna på inlägget är stöttande.
-
-    – Bra Tommy Salo. Vi finns vid din sida, skriver Leif Rohlin.
-
-    – Lycka till Tommy. Kämpa på, skriver Johan Lindblom.
-
-    – Jag önskar dig kraft och all lycka i din kamp mot demonerna, skriver Petter Rönnqvist.',
-    'author_name' => 'Stefan Lövfen',
-    'publication_date' => '2020-10-19',
-    'likes' => 23,
-    'image' => 'https://picsum.photos/seed/picsum/1000',
-  ],
-  [
+    'title' => 'Soldier, The one',
     'author_id' => 2,
-    'title' => 'En natt i lorem',
-    'content' => 'Då tog jag narrens kåpa,
-    Jag gycklade en lek
-    Och när jag räckte tungan
-    Man af förtjusning skrek.
-    Då stanna ekipager
-    Med höga herrar i:
-    »Det var en rolig djefvul,
-    Den der kan något bli!»
-    Och hopen höres jubla
-    När herrarne få ris.
-    Men när man vädrar allvar.
-    Då ropas på polis.
-    Så blef jag stämd för gyckel
-    Med allt gudomligt var,
-    Ty visst det är gudomligt
-    Att åka efter par.
-    Det halp ej protestera,
+    'publication_date' => '2013-07-29',
+    'likes' => 182,
+    'content' => "Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre. Sing praises to him with the harp of ten strings. Sing to him a new song. Play skillfully with a shout of joy! For the word of Yahweh is right. All his work is done in faithfulness. He loves righteousness and justice. The earth is full of the loving kindness of Yahweh. By Yahweh's word, the heavens were made; all their army by the breath of his mouth. He gathers the waters of the sea together as a heap. He lays up the deeps in storehouses. Let all the earth fear Yahweh. Let all the inhabitants of the world stand in awe of him. For he spoke, and it was done. He commanded, and it stood firm. Yahweh brings the counsel of the nations to nothing. He makes the thoughts of the peoples to be of no effect. The counsel of Yahweh stands fast forever, the thoughts of his heart to all generations. Blessed is the nation whose God is Yahweh, the people whom he has chosen for his own inheritance. Yahweh looks from heaven. He sees all the sons of men. From the place of his habitation he looks out on all the inhabitants of the earth, he who fashions all of their hearts; and he considers all of their works. There is no king saved by the multitude of an army. A mighty man is not delivered by great strength. A horse is a vain thing for safety, neither does he deliver any by his great power. Behold, Yahweh's eye is on those who fear him, on those who hope in his loving kindness; to deliver their soul from death, to keep them alive in famine. Our soul has waited for Yahweh. He is our help and our shield. For our heart rejoices in him, because we have trusted in his holy name. Let your loving kindness be on us, Yahweh, since we have hoped in you.
 
-    Ej gillas mitt försvar,
-Att ej det varit gyckel,
-Men att det allvar var.
-Så tog jag svarta kappan,
-Och steg i predikstoln,
-Fick höra folket snarka
-Som grisar uti soin.
-Jag skrek så några väcktes
-Och konsistorium med,
-Men då jag miste kappan
-Och röcks från stolen ned.
-Jag var ej ordinerad,
-Jag hade icke tron,
-Den gamla gamla visan
-På gamla gamla ton.
-    ',
-    'author_name' => 'Fredrik Reinfeldt',
-    'publication_date' => '2020-10-19',
-    'likes' => 23,
-    'image' => 'https://picsum.photos/seed/picsum/1000',
+    The fool has said in his heart, «There is no God.» They are corrupt, and have done abominable iniquity. There is no one who does good. God looks down from heaven on the children of men, to see if there are any who understood, who seek after God. Every one of them has gone back. They have become filthy together. There is no one who does good, no, not one. Have the workers of iniquity no knowledge, who eat up my people as they eat bread, and don't call on God? There they were in great fear, where no fear was, for God has scattered the bones of him who encamps against you. You have put them to shame, because God has rejected them. Oh that the salvation of Israel would come out of Zion! When God brings back his people from captivity, then Jacob shall rejoice, and Israel shall be glad.
+    
+    Praise Yah! Praise Yahweh from the heavens! Praise him in the heights! Praise him, all his angels! Praise him, all his army! Praise him, sun and moon! Praise him, all you shining stars! Praise him, you heavens of heavens, You waters that are above the heavens. Let them praise the name of Yahweh, For he commanded, and they were created. He has also established them forever and ever. He has made a decree which will not pass away. Praise Yahweh from the earth, you great sea creatures, and all depths! Lightning and hail, snow and clouds; stormy wind, fulfilling his word; mountains and all hills; fruit trees and all cedars; wild animals and all livestock; small creatures and flying birds; kings of the earth and all peoples; princes and all judges of the earth; both young men and maidens; old men and children: let them praise the name of Yahweh, for his name alone is exalted. His glory is above the earth and the heavens. He has lifted up the horn of his people, the praise of all his saints; even of the children of Israel, a people near to him. Praise Yah!",
+    'content_descr' => 'Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre.'
+  ],
+  [
+    'title' => 'Soldier, The two',
+    'author_id' => 5,
+    'publication_date' => '2013-12-27',
+    'likes' => 182,
+    'content' => "Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre. Sing praises to him with the harp of ten strings. Sing to him a new song. Play skillfully with a shout of joy! For the word of Yahweh is right. All his work is done in faithfulness. He loves righteousness and justice. The earth is full of the loving kindness of Yahweh. By Yahweh's word, the heavens were made; all their army by the breath of his mouth. He gathers the waters of the sea together as a heap. He lays up the deeps in storehouses. Let all the earth fear Yahweh. Let all the inhabitants of the world stand in awe of him. For he spoke, and it was done. He commanded, and it stood firm. Yahweh brings the counsel of the nations to nothing. He makes the thoughts of the peoples to be of no effect. The counsel of Yahweh stands fast forever, the thoughts of his heart to all generations. Blessed is the nation whose God is Yahweh, the people whom he has chosen for his own inheritance. Yahweh looks from heaven. He sees all the sons of men. From the place of his habitation he looks out on all the inhabitants of the earth, he who fashions all of their hearts; and he considers all of their works. There is no king saved by the multitude of an army. A mighty man is not delivered by great strength. A horse is a vain thing for safety, neither does he deliver any by his great power. Behold, Yahweh's eye is on those who fear him, on those who hope in his loving kindness; to deliver their soul from death, to keep them alive in famine. Our soul has waited for Yahweh. He is our help and our shield. For our heart rejoices in him, because we have trusted in his holy name. Let your loving kindness be on us, Yahweh, since we have hoped in you.
+
+    The fool has said in his heart, «There is no God.» They are corrupt, and have done abominable iniquity. There is no one who does good. God looks down from heaven on the children of men, to see if there are any who understood, who seek after God. Every one of them has gone back. They have become filthy together. There is no one who does good, no, not one. Have the workers of iniquity no knowledge, who eat up my people as they eat bread, and don't call on God? There they were in great fear, where no fear was, for God has scattered the bones of him who encamps against you. You have put them to shame, because God has rejected them. Oh that the salvation of Israel would come out of Zion! When God brings back his people from captivity, then Jacob shall rejoice, and Israel shall be glad.
+    
+    Praise Yah! Praise Yahweh from the heavens! Praise him in the heights! Praise him, all his angels! Praise him, all his army! Praise him, sun and moon! Praise him, all you shining stars! Praise him, you heavens of heavens, You waters that are above the heavens. Let them praise the name of Yahweh, For he commanded, and they were created. He has also established them forever and ever. He has made a decree which will not pass away. Praise Yahweh from the earth, you great sea creatures, and all depths! Lightning and hail, snow and clouds; stormy wind, fulfilling his word; mountains and all hills; fruit trees and all cedars; wild animals and all livestock; small creatures and flying birds; kings of the earth and all peoples; princes and all judges of the earth; both young men and maidens; old men and children: let them praise the name of Yahweh, for his name alone is exalted. His glory is above the earth and the heavens. He has lifted up the horn of his people, the praise of all his saints; even of the children of Israel, a people near to him. Praise Yah!",
+    'content_descr' => 'Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre.'
+  ],
+  [
+    'title' => 'Soldier, The three',
+    'author_id' => 1,
+    'publication_date' => '2014-01-27',
+    'likes' => 182,
+    'content' => "Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre. Sing praises to him with the harp of ten strings. Sing to him a new song. Play skillfully with a shout of joy! For the word of Yahweh is right. All his work is done in faithfulness. He loves righteousness and justice. The earth is full of the loving kindness of Yahweh. By Yahweh's word, the heavens were made; all their army by the breath of his mouth. He gathers the waters of the sea together as a heap. He lays up the deeps in storehouses. Let all the earth fear Yahweh. Let all the inhabitants of the world stand in awe of him. For he spoke, and it was done. He commanded, and it stood firm. Yahweh brings the counsel of the nations to nothing. He makes the thoughts of the peoples to be of no effect. The counsel of Yahweh stands fast forever, the thoughts of his heart to all generations. Blessed is the nation whose God is Yahweh, the people whom he has chosen for his own inheritance. Yahweh looks from heaven. He sees all the sons of men. From the place of his habitation he looks out on all the inhabitants of the earth, he who fashions all of their hearts; and he considers all of their works. There is no king saved by the multitude of an army. A mighty man is not delivered by great strength. A horse is a vain thing for safety, neither does he deliver any by his great power. Behold, Yahweh's eye is on those who fear him, on those who hope in his loving kindness; to deliver their soul from death, to keep them alive in famine. Our soul has waited for Yahweh. He is our help and our shield. For our heart rejoices in him, because we have trusted in his holy name. Let your loving kindness be on us, Yahweh, since we have hoped in you.
+
+    The fool has said in his heart, «There is no God.» They are corrupt, and have done abominable iniquity. There is no one who does good. God looks down from heaven on the children of men, to see if there are any who understood, who seek after God. Every one of them has gone back. They have become filthy together. There is no one who does good, no, not one. Have the workers of iniquity no knowledge, who eat up my people as they eat bread, and don't call on God? There they were in great fear, where no fear was, for God has scattered the bones of him who encamps against you. You have put them to shame, because God has rejected them. Oh that the salvation of Israel would come out of Zion! When God brings back his people from captivity, then Jacob shall rejoice, and Israel shall be glad.
+    
+    Praise Yah! Praise Yahweh from the heavens! Praise him in the heights! Praise him, all his angels! Praise him, all his army! Praise him, sun and moon! Praise him, all you shining stars! Praise him, you heavens of heavens, You waters that are above the heavens. Let them praise the name of Yahweh, For he commanded, and they were created. He has also established them forever and ever. He has made a decree which will not pass away. Praise Yahweh from the earth, you great sea creatures, and all depths! Lightning and hail, snow and clouds; stormy wind, fulfilling his word; mountains and all hills; fruit trees and all cedars; wild animals and all livestock; small creatures and flying birds; kings of the earth and all peoples; princes and all judges of the earth; both young men and maidens; old men and children: let them praise the name of Yahweh, for his name alone is exalted. His glory is above the earth and the heavens. He has lifted up the horn of his people, the praise of all his saints; even of the children of Israel, a people near to him. Praise Yah!",
+    'content_descr' => 'Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre.'
+  ],
+  [
+    'title' => 'Soldier, The four',
+    'author_id' => 2,
+    'publication_date' => '2014-03-05',
+    'likes' => 182,
+    'content' => "Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre. Sing praises to him with the harp of ten strings. Sing to him a new song. Play skillfully with a shout of joy! For the word of Yahweh is right. All his work is done in faithfulness. He loves righteousness and justice. The earth is full of the loving kindness of Yahweh. By Yahweh's word, the heavens were made; all their army by the breath of his mouth. He gathers the waters of the sea together as a heap. He lays up the deeps in storehouses. Let all the earth fear Yahweh. Let all the inhabitants of the world stand in awe of him. For he spoke, and it was done. He commanded, and it stood firm. Yahweh brings the counsel of the nations to nothing. He makes the thoughts of the peoples to be of no effect. The counsel of Yahweh stands fast forever, the thoughts of his heart to all generations. Blessed is the nation whose God is Yahweh, the people whom he has chosen for his own inheritance. Yahweh looks from heaven. He sees all the sons of men. From the place of his habitation he looks out on all the inhabitants of the earth, he who fashions all of their hearts; and he considers all of their works. There is no king saved by the multitude of an army. A mighty man is not delivered by great strength. A horse is a vain thing for safety, neither does he deliver any by his great power. Behold, Yahweh's eye is on those who fear him, on those who hope in his loving kindness; to deliver their soul from death, to keep them alive in famine. Our soul has waited for Yahweh. He is our help and our shield. For our heart rejoices in him, because we have trusted in his holy name. Let your loving kindness be on us, Yahweh, since we have hoped in you.
+
+    The fool has said in his heart, «There is no God.» They are corrupt, and have done abominable iniquity. There is no one who does good. God looks down from heaven on the children of men, to see if there are any who understood, who seek after God. Every one of them has gone back. They have become filthy together. There is no one who does good, no, not one. Have the workers of iniquity no knowledge, who eat up my people as they eat bread, and don't call on God? There they were in great fear, where no fear was, for God has scattered the bones of him who encamps against you. You have put them to shame, because God has rejected them. Oh that the salvation of Israel would come out of Zion! When God brings back his people from captivity, then Jacob shall rejoice, and Israel shall be glad.
+    
+    Praise Yah! Praise Yahweh from the heavens! Praise him in the heights! Praise him, all his angels! Praise him, all his army! Praise him, sun and moon! Praise him, all you shining stars! Praise him, you heavens of heavens, You waters that are above the heavens. Let them praise the name of Yahweh, For he commanded, and they were created. He has also established them forever and ever. He has made a decree which will not pass away. Praise Yahweh from the earth, you great sea creatures, and all depths! Lightning and hail, snow and clouds; stormy wind, fulfilling his word; mountains and all hills; fruit trees and all cedars; wild animals and all livestock; small creatures and flying birds; kings of the earth and all peoples; princes and all judges of the earth; both young men and maidens; old men and children: let them praise the name of Yahweh, for his name alone is exalted. His glory is above the earth and the heavens. He has lifted up the horn of his people, the praise of all his saints; even of the children of Israel, a people near to him. Praise Yah!",
+    'content_descr' => 'Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre.'
+  ],
+  [
+    'title' => 'Soldier, The five',
+    'author_id' => 3,
+    'publication_date' => '2014-12-20',
+    'likes' => 182,
+    'content' => "Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre. Sing praises to him with the harp of ten strings. Sing to him a new song. Play skillfully with a shout of joy! For the word of Yahweh is right. All his work is done in faithfulness. He loves righteousness and justice. The earth is full of the loving kindness of Yahweh. By Yahweh's word, the heavens were made; all their army by the breath of his mouth. He gathers the waters of the sea together as a heap. He lays up the deeps in storehouses. Let all the earth fear Yahweh. Let all the inhabitants of the world stand in awe of him. For he spoke, and it was done. He commanded, and it stood firm. Yahweh brings the counsel of the nations to nothing. He makes the thoughts of the peoples to be of no effect. The counsel of Yahweh stands fast forever, the thoughts of his heart to all generations. Blessed is the nation whose God is Yahweh, the people whom he has chosen for his own inheritance. Yahweh looks from heaven. He sees all the sons of men. From the place of his habitation he looks out on all the inhabitants of the earth, he who fashions all of their hearts; and he considers all of their works. There is no king saved by the multitude of an army. A mighty man is not delivered by great strength. A horse is a vain thing for safety, neither does he deliver any by his great power. Behold, Yahweh's eye is on those who fear him, on those who hope in his loving kindness; to deliver their soul from death, to keep them alive in famine. Our soul has waited for Yahweh. He is our help and our shield. For our heart rejoices in him, because we have trusted in his holy name. Let your loving kindness be on us, Yahweh, since we have hoped in you.
+
+    The fool has said in his heart, «There is no God.» They are corrupt, and have done abominable iniquity. There is no one who does good. God looks down from heaven on the children of men, to see if there are any who understood, who seek after God. Every one of them has gone back. They have become filthy together. There is no one who does good, no, not one. Have the workers of iniquity no knowledge, who eat up my people as they eat bread, and don't call on God? There they were in great fear, where no fear was, for God has scattered the bones of him who encamps against you. You have put them to shame, because God has rejected them. Oh that the salvation of Israel would come out of Zion! When God brings back his people from captivity, then Jacob shall rejoice, and Israel shall be glad.
+    
+    Praise Yah! Praise Yahweh from the heavens! Praise him in the heights! Praise him, all his angels! Praise him, all his army! Praise him, sun and moon! Praise him, all you shining stars! Praise him, you heavens of heavens, You waters that are above the heavens. Let them praise the name of Yahweh, For he commanded, and they were created. He has also established them forever and ever. He has made a decree which will not pass away. Praise Yahweh from the earth, you great sea creatures, and all depths! Lightning and hail, snow and clouds; stormy wind, fulfilling his word; mountains and all hills; fruit trees and all cedars; wild animals and all livestock; small creatures and flying birds; kings of the earth and all peoples; princes and all judges of the earth; both young men and maidens; old men and children: let them praise the name of Yahweh, for his name alone is exalted. His glory is above the earth and the heavens. He has lifted up the horn of his people, the praise of all his saints; even of the children of Israel, a people near to him. Praise Yah!",
+    'content_descr' => 'Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre.'
+  ],
+  [
+    'title' => 'Soldier, The six',
+    'author_id' => 4,
+    'publication_date' => '2016-05-13',
+    'likes' => 182,
+    'content' => "Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre. Sing praises to him with the harp of ten strings. Sing to him a new song. Play skillfully with a shout of joy! For the word of Yahweh is right. All his work is done in faithfulness. He loves righteousness and justice. The earth is full of the loving kindness of Yahweh. By Yahweh's word, the heavens were made; all their army by the breath of his mouth. He gathers the waters of the sea together as a heap. He lays up the deeps in storehouses. Let all the earth fear Yahweh. Let all the inhabitants of the world stand in awe of him. For he spoke, and it was done. He commanded, and it stood firm. Yahweh brings the counsel of the nations to nothing. He makes the thoughts of the peoples to be of no effect. The counsel of Yahweh stands fast forever, the thoughts of his heart to all generations. Blessed is the nation whose God is Yahweh, the people whom he has chosen for his own inheritance. Yahweh looks from heaven. He sees all the sons of men. From the place of his habitation he looks out on all the inhabitants of the earth, he who fashions all of their hearts; and he considers all of their works. There is no king saved by the multitude of an army. A mighty man is not delivered by great strength. A horse is a vain thing for safety, neither does he deliver any by his great power. Behold, Yahweh's eye is on those who fear him, on those who hope in his loving kindness; to deliver their soul from death, to keep them alive in famine. Our soul has waited for Yahweh. He is our help and our shield. For our heart rejoices in him, because we have trusted in his holy name. Let your loving kindness be on us, Yahweh, since we have hoped in you.
+
+    The fool has said in his heart, «There is no God.» They are corrupt, and have done abominable iniquity. There is no one who does good. God looks down from heaven on the children of men, to see if there are any who understood, who seek after God. Every one of them has gone back. They have become filthy together. There is no one who does good, no, not one. Have the workers of iniquity no knowledge, who eat up my people as they eat bread, and don't call on God? There they were in great fear, where no fear was, for God has scattered the bones of him who encamps against you. You have put them to shame, because God has rejected them. Oh that the salvation of Israel would come out of Zion! When God brings back his people from captivity, then Jacob shall rejoice, and Israel shall be glad.
+    
+    Praise Yah! Praise Yahweh from the heavens! Praise him in the heights! Praise him, all his angels! Praise him, all his army! Praise him, sun and moon! Praise him, all you shining stars! Praise him, you heavens of heavens, You waters that are above the heavens. Let them praise the name of Yahweh, For he commanded, and they were created. He has also established them forever and ever. He has made a decree which will not pass away. Praise Yahweh from the earth, you great sea creatures, and all depths! Lightning and hail, snow and clouds; stormy wind, fulfilling his word; mountains and all hills; fruit trees and all cedars; wild animals and all livestock; small creatures and flying birds; kings of the earth and all peoples; princes and all judges of the earth; both young men and maidens; old men and children: let them praise the name of Yahweh, for his name alone is exalted. His glory is above the earth and the heavens. He has lifted up the horn of his people, the praise of all his saints; even of the children of Israel, a people near to him. Praise Yah!",
+    'content_descr' => 'Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre.'
+  ],
+  [
+    'title' => 'Soldier, The seven',
+    'author_id' => 5,
+    'publication_date' => '2016-11-11',
+    'likes' => 182,
+    'content' => "Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre. Sing praises to him with the harp of ten strings. Sing to him a new song. Play skillfully with a shout of joy! For the word of Yahweh is right. All his work is done in faithfulness. He loves righteousness and justice. The earth is full of the loving kindness of Yahweh. By Yahweh's word, the heavens were made; all their army by the breath of his mouth. He gathers the waters of the sea together as a heap. He lays up the deeps in storehouses. Let all the earth fear Yahweh. Let all the inhabitants of the world stand in awe of him. For he spoke, and it was done. He commanded, and it stood firm. Yahweh brings the counsel of the nations to nothing. He makes the thoughts of the peoples to be of no effect. The counsel of Yahweh stands fast forever, the thoughts of his heart to all generations. Blessed is the nation whose God is Yahweh, the people whom he has chosen for his own inheritance. Yahweh looks from heaven. He sees all the sons of men. From the place of his habitation he looks out on all the inhabitants of the earth, he who fashions all of their hearts; and he considers all of their works. There is no king saved by the multitude of an army. A mighty man is not delivered by great strength. A horse is a vain thing for safety, neither does he deliver any by his great power. Behold, Yahweh's eye is on those who fear him, on those who hope in his loving kindness; to deliver their soul from death, to keep them alive in famine. Our soul has waited for Yahweh. He is our help and our shield. For our heart rejoices in him, because we have trusted in his holy name. Let your loving kindness be on us, Yahweh, since we have hoped in you.
+
+    The fool has said in his heart, «There is no God.» They are corrupt, and have done abominable iniquity. There is no one who does good. God looks down from heaven on the children of men, to see if there are any who understood, who seek after God. Every one of them has gone back. They have become filthy together. There is no one who does good, no, not one. Have the workers of iniquity no knowledge, who eat up my people as they eat bread, and don't call on God? There they were in great fear, where no fear was, for God has scattered the bones of him who encamps against you. You have put them to shame, because God has rejected them. Oh that the salvation of Israel would come out of Zion! When God brings back his people from captivity, then Jacob shall rejoice, and Israel shall be glad.
+    
+    Praise Yah! Praise Yahweh from the heavens! Praise him in the heights! Praise him, all his angels! Praise him, all his army! Praise him, sun and moon! Praise him, all you shining stars! Praise him, you heavens of heavens, You waters that are above the heavens. Let them praise the name of Yahweh, For he commanded, and they were created. He has also established them forever and ever. He has made a decree which will not pass away. Praise Yahweh from the earth, you great sea creatures, and all depths! Lightning and hail, snow and clouds; stormy wind, fulfilling his word; mountains and all hills; fruit trees and all cedars; wild animals and all livestock; small creatures and flying birds; kings of the earth and all peoples; princes and all judges of the earth; both young men and maidens; old men and children: let them praise the name of Yahweh, for his name alone is exalted. His glory is above the earth and the heavens. He has lifted up the horn of his people, the praise of all his saints; even of the children of Israel, a people near to him. Praise Yah!",
+    'content_descr' => 'Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre.'
+  ],
+  [
+    'title' => 'Soldier, The eight',
+    'author_id' => 4,
+    'publication_date' => '2018-10-20',
+    'likes' => 182,
+    'content' => "Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre. Sing praises to him with the harp of ten strings. Sing to him a new song. Play skillfully with a shout of joy! For the word of Yahweh is right. All his work is done in faithfulness. He loves righteousness and justice. The earth is full of the loving kindness of Yahweh. By Yahweh's word, the heavens were made; all their army by the breath of his mouth. He gathers the waters of the sea together as a heap. He lays up the deeps in storehouses. Let all the earth fear Yahweh. Let all the inhabitants of the world stand in awe of him. For he spoke, and it was done. He commanded, and it stood firm. Yahweh brings the counsel of the nations to nothing. He makes the thoughts of the peoples to be of no effect. The counsel of Yahweh stands fast forever, the thoughts of his heart to all generations. Blessed is the nation whose God is Yahweh, the people whom he has chosen for his own inheritance. Yahweh looks from heaven. He sees all the sons of men. From the place of his habitation he looks out on all the inhabitants of the earth, he who fashions all of their hearts; and he considers all of their works. There is no king saved by the multitude of an army. A mighty man is not delivered by great strength. A horse is a vain thing for safety, neither does he deliver any by his great power. Behold, Yahweh's eye is on those who fear him, on those who hope in his loving kindness; to deliver their soul from death, to keep them alive in famine. Our soul has waited for Yahweh. He is our help and our shield. For our heart rejoices in him, because we have trusted in his holy name. Let your loving kindness be on us, Yahweh, since we have hoped in you.
+
+    The fool has said in his heart, «There is no God.» They are corrupt, and have done abominable iniquity. There is no one who does good. God looks down from heaven on the children of men, to see if there are any who understood, who seek after God. Every one of them has gone back. They have become filthy together. There is no one who does good, no, not one. Have the workers of iniquity no knowledge, who eat up my people as they eat bread, and don't call on God? There they were in great fear, where no fear was, for God has scattered the bones of him who encamps against you. You have put them to shame, because God has rejected them. Oh that the salvation of Israel would come out of Zion! When God brings back his people from captivity, then Jacob shall rejoice, and Israel shall be glad.
+    
+    Praise Yah! Praise Yahweh from the heavens! Praise him in the heights! Praise him, all his angels! Praise him, all his army! Praise him, sun and moon! Praise him, all you shining stars! Praise him, you heavens of heavens, You waters that are above the heavens. Let them praise the name of Yahweh, For he commanded, and they were created. He has also established them forever and ever. He has made a decree which will not pass away. Praise Yahweh from the earth, you great sea creatures, and all depths! Lightning and hail, snow and clouds; stormy wind, fulfilling his word; mountains and all hills; fruit trees and all cedars; wild animals and all livestock; small creatures and flying birds; kings of the earth and all peoples; princes and all judges of the earth; both young men and maidens; old men and children: let them praise the name of Yahweh, for his name alone is exalted. His glory is above the earth and the heavens. He has lifted up the horn of his people, the praise of all his saints; even of the children of Israel, a people near to him. Praise Yah!",
+    'content_descr' => 'Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre.'
+  ],
+  [
+    'title' => 'Soldier, The nine',
+    'author_id' => 3,
+    'publication_date' => '2020-03-20',
+    'likes' => 182,
+    'content' => "Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre. Sing praises to him with the harp of ten strings. Sing to him a new song. Play skillfully with a shout of joy! For the word of Yahweh is right. All his work is done in faithfulness. He loves righteousness and justice. The earth is full of the loving kindness of Yahweh. By Yahweh's word, the heavens were made; all their army by the breath of his mouth. He gathers the waters of the sea together as a heap. He lays up the deeps in storehouses. Let all the earth fear Yahweh. Let all the inhabitants of the world stand in awe of him. For he spoke, and it was done. He commanded, and it stood firm. Yahweh brings the counsel of the nations to nothing. He makes the thoughts of the peoples to be of no effect. The counsel of Yahweh stands fast forever, the thoughts of his heart to all generations. Blessed is the nation whose God is Yahweh, the people whom he has chosen for his own inheritance. Yahweh looks from heaven. He sees all the sons of men. From the place of his habitation he looks out on all the inhabitants of the earth, he who fashions all of their hearts; and he considers all of their works. There is no king saved by the multitude of an army. A mighty man is not delivered by great strength. A horse is a vain thing for safety, neither does he deliver any by his great power. Behold, Yahweh's eye is on those who fear him, on those who hope in his loving kindness; to deliver their soul from death, to keep them alive in famine. Our soul has waited for Yahweh. He is our help and our shield. For our heart rejoices in him, because we have trusted in his holy name. Let your loving kindness be on us, Yahweh, since we have hoped in you.
+
+    The fool has said in his heart, «There is no God.» They are corrupt, and have done abominable iniquity. There is no one who does good. God looks down from heaven on the children of men, to see if there are any who understood, who seek after God. Every one of them has gone back. They have become filthy together. There is no one who does good, no, not one. Have the workers of iniquity no knowledge, who eat up my people as they eat bread, and don't call on God? There they were in great fear, where no fear was, for God has scattered the bones of him who encamps against you. You have put them to shame, because God has rejected them. Oh that the salvation of Israel would come out of Zion! When God brings back his people from captivity, then Jacob shall rejoice, and Israel shall be glad.
+    
+    Praise Yah! Praise Yahweh from the heavens! Praise him in the heights! Praise him, all his angels! Praise him, all his army! Praise him, sun and moon! Praise him, all you shining stars! Praise him, you heavens of heavens, You waters that are above the heavens. Let them praise the name of Yahweh, For he commanded, and they were created. He has also established them forever and ever. He has made a decree which will not pass away. Praise Yahweh from the earth, you great sea creatures, and all depths! Lightning and hail, snow and clouds; stormy wind, fulfilling his word; mountains and all hills; fruit trees and all cedars; wild animals and all livestock; small creatures and flying birds; kings of the earth and all peoples; princes and all judges of the earth; both young men and maidens; old men and children: let them praise the name of Yahweh, for his name alone is exalted. His glory is above the earth and the heavens. He has lifted up the horn of his people, the praise of all his saints; even of the children of Israel, a people near to him. Praise Yah!",
+    'content_descr' => 'Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre.'
+  ],
+  [
+    'title' => 'Soldier, The ten',
+    'author_id' => 1,
+    'publication_date' => '2020-06-15',
+    'likes' => 182,
+    'content' => "Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre. Sing praises to him with the harp of ten strings. Sing to him a new song. Play skillfully with a shout of joy! For the word of Yahweh is right. All his work is done in faithfulness. He loves righteousness and justice. The earth is full of the loving kindness of Yahweh. By Yahweh's word, the heavens were made; all their army by the breath of his mouth. He gathers the waters of the sea together as a heap. He lays up the deeps in storehouses. Let all the earth fear Yahweh. Let all the inhabitants of the world stand in awe of him. For he spoke, and it was done. He commanded, and it stood firm. Yahweh brings the counsel of the nations to nothing. He makes the thoughts of the peoples to be of no effect. The counsel of Yahweh stands fast forever, the thoughts of his heart to all generations. Blessed is the nation whose God is Yahweh, the people whom he has chosen for his own inheritance. Yahweh looks from heaven. He sees all the sons of men. From the place of his habitation he looks out on all the inhabitants of the earth, he who fashions all of their hearts; and he considers all of their works. There is no king saved by the multitude of an army. A mighty man is not delivered by great strength. A horse is a vain thing for safety, neither does he deliver any by his great power. Behold, Yahweh's eye is on those who fear him, on those who hope in his loving kindness; to deliver their soul from death, to keep them alive in famine. Our soul has waited for Yahweh. He is our help and our shield. For our heart rejoices in him, because we have trusted in his holy name. Let your loving kindness be on us, Yahweh, since we have hoped in you.
+
+    The fool has said in his heart, «There is no God.» They are corrupt, and have done abominable iniquity. There is no one who does good. God looks down from heaven on the children of men, to see if there are any who understood, who seek after God. Every one of them has gone back. They have become filthy together. There is no one who does good, no, not one. Have the workers of iniquity no knowledge, who eat up my people as they eat bread, and don't call on God? There they were in great fear, where no fear was, for God has scattered the bones of him who encamps against you. You have put them to shame, because God has rejected them. Oh that the salvation of Israel would come out of Zion! When God brings back his people from captivity, then Jacob shall rejoice, and Israel shall be glad.
+    
+    Praise Yah! Praise Yahweh from the heavens! Praise him in the heights! Praise him, all his angels! Praise him, all his army! Praise him, sun and moon! Praise him, all you shining stars! Praise him, you heavens of heavens, You waters that are above the heavens. Let them praise the name of Yahweh, For he commanded, and they were created. He has also established them forever and ever. He has made a decree which will not pass away. Praise Yahweh from the earth, you great sea creatures, and all depths! Lightning and hail, snow and clouds; stormy wind, fulfilling his word; mountains and all hills; fruit trees and all cedars; wild animals and all livestock; small creatures and flying birds; kings of the earth and all peoples; princes and all judges of the earth; both young men and maidens; old men and children: let them praise the name of Yahweh, for his name alone is exalted. His glory is above the earth and the heavens. He has lifted up the horn of his people, the praise of all his saints; even of the children of Israel, a people near to him. Praise Yah!",
+    'content_descr' => 'Rejoice in Yahweh, you righteous! Praise is fitting for the upright. Give thanks to Yahweh with the lyre.'
   ],
 ];
