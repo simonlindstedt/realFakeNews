@@ -10,3 +10,13 @@ function getAuthorName(array $article, array $authors): string
     }
   }
 }
+
+function generateURL(string $page, string $key, array $article): string
+{
+  return $page . '.php?' . $key . '=' . $article[$key];
+}
+
+function addBreaks(string $text): string
+{
+  return str_ireplace("\n", "<br>", $text);
+}
