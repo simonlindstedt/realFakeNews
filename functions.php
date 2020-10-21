@@ -11,6 +11,15 @@ function getAuthorName(array $article, array $authors): string
   }
 }
 
+function getAuthorNameByID(array $authors, int $ID): string
+{
+  foreach ($authors as $author) {
+    if ((int)$author['ID'] === $ID) {
+      return $author['name'];
+    }
+  }
+}
+
 function generateURL(string $page, string $key, array $article): string
 {
   return $page . '.php?' . $key . '=' . $article[$key];

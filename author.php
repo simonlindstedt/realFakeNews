@@ -2,8 +2,9 @@
 
 require __DIR__ . '/functions.php';
 require __DIR__ . '/data.php';
-$articles = array_reverse($articles); // For the dates to be in cron order
-$title = $_GET['title'];
+
+$author_id = $_GET['author_id'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,9 +19,10 @@ $title = $_GET['title'];
   <a href="index.php">
     <h1>Real Fake News</h1>
   </a>
+  <h2>Articles by <?= getAuthorNameByID($authors, $author_id) ?></h2>
   <section>
     <?php foreach ($articles as $article) : ?>
-      <?php if ($title === $article['title']) : ?>
+      <?php if ((int)$author_id === (int)$article['author_id']) : ?>
         <article>
           <a href="<?= generateURL('article', 'title', $article) ?>">
             <h2><?= $article['title'] ?></h2>
@@ -29,7 +31,7 @@ $title = $_GET['title'];
           <a href="<?= generateURL('author', 'author_id', $article) ?>">
             <h3><?= getAuthorName($article, $authors) ?></h3>
           </a>
-          <p><?= addBreaks($article['content']) ?></p>
+          <p><?= $article['content_descr'] ?></p>
           <p><?= $article['publication_date'] ?></p>
           <p><?= $article['likes'] ?></p>
         </article>
