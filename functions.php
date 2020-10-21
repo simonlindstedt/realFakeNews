@@ -2,19 +2,10 @@
 
 declare(strict_types=1);
 
-function getAuthorName(array $article, array $authors): string
+function getAuthorName(array $authors, int $author_id): string
 {
   foreach ($authors as $author) {
-    if ((int)$article['author_id'] === $author['ID']) {
-      return $author['name'];
-    }
-  }
-}
-
-function getAuthorNameByID(array $authors, int $ID): string
-{
-  foreach ($authors as $author) {
-    if ((int)$author['ID'] === $ID) {
+    if ($author['ID'] === $author_id) {
       return $author['name'];
     }
   }
@@ -29,3 +20,8 @@ function addBreaks(string $text): string
 {
   return str_ireplace("\n", "<br>", $text);
 }
+
+// function sortByDate($dateOne, $dateTwo): int
+// {
+//   return strtotime($dateOne) - strtotime($dateTwo);
+// }

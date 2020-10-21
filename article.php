@@ -27,7 +27,7 @@ $title = $_GET['title'];
           </a>
           <img src="https://picsum.photos/id/5/250" />
           <a href="<?= generateURL('author', 'author_id', $article) ?>">
-            <h3><?= getAuthorName($article, $authors) ?></h3>
+            <h3><?= getAuthorName($authors, $article['author_id']) ?></h3>
           </a>
           <p><?= addBreaks($article['content']) ?></p>
           <p><?= $article['publication_date'] ?></p>

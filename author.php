@@ -19,7 +19,7 @@ $author_id = $_GET['author_id'];
   <a href="index.php">
     <h1>Real Fake News</h1>
   </a>
-  <h2>Articles by <?= getAuthorNameByID($authors, $author_id) ?></h2>
+  <h2>Articles by <?= getAuthorName($authors, $author_id) ?></h2>
   <section>
     <?php foreach ($articles as $article) : ?>
       <?php if ((int)$author_id === (int)$article['author_id']) : ?>
@@ -29,7 +29,7 @@ $author_id = $_GET['author_id'];
           </a>
           <img src="https://picsum.photos/id/5/250" />
           <a href="<?= generateURL('author', 'author_id', $article) ?>">
-            <h3><?= getAuthorName($article, $authors) ?></h3>
+            <h3><?= getAuthorName($authors, $article['author_id']) ?></h3>
           </a>
           <p><?= $article['content_descr'] ?></p>
           <p><?= $article['publication_date'] ?></p>

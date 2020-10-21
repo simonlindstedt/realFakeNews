@@ -2,7 +2,9 @@
 
 require __DIR__ . '/functions.php';
 require __DIR__ . '/data.php';
-$articles = array_reverse($articles); // For the dates to be in cron order
+
+$articles = array_reverse($articles); // For the dates to be in cron order, the stupid way.
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +27,7 @@ $articles = array_reverse($articles); // For the dates to be in cron order
         </a>
         <img src="https://picsum.photos/id/5/250" />
         <a href="<?= generateURL('author', 'author_id', $article) ?>">
-          <h3><?= getAuthorName($article, $authors) ?></h3>
+          <h3><?= getAuthorName($authors, $article['author_id']) ?></h3>
         </a>
         <p><?= $article['content_descr'] ?></p>
         <p><?= $article['publication_date'] ?></p>
