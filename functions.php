@@ -21,7 +21,9 @@ function addBreaks(string $text): string
   return str_ireplace("\n", "<br>", $text);
 }
 
-// function sortByDate($dateOne, $dateTwo): int
+// function orderByDate(array $array): void
 // {
-//   return strtotime($dateOne) - strtotime($dateTwo);
+//   usort($array, function ($dateOne, $dateTwo) {
+//     return strtotime($dateTwo['publication_date']) - strtotime($dateOne['publication_date']);
+//   });
 // }
