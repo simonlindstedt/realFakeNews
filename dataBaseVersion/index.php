@@ -28,7 +28,7 @@ require __DIR__ . '/header.php';
           </a>
           <p class="date"><?= $article['publication_date'] ?></p>
           <p><?= $article['content_descr'] ?></p>
-          <p style="text-align: center;">///</p>
+          <p style="text-align: center;">☩</p>
         </div>
       </article>
     <?php endforeach ?>
