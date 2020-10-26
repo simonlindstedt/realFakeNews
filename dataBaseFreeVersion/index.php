@@ -3,11 +3,7 @@
 require __DIR__ . '/functions.php';
 require __DIR__ . '/data.php';
 
-usort($articles, function ($dateOne, $dateTwo) {
-
-  return strtotime($dateTwo['publication_date']) - strtotime($dateOne['publication_date']);
-}); // Sorting the dates in cron order, the smart way.
-
+sortByDate($articles);
 
 ?>
 <!DOCTYPE html>

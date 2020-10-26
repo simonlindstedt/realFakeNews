@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-function getAuthorName(array $authors, int $author_id): string
+function getAuthorName(array $authors, int $authorId): string
 {
   foreach ($authors as $author) {
-    if ($author['ID'] === $author_id) {
+    if ($author['ID'] === $authorId) {
       return $author['name'];
     }
   }
@@ -21,9 +21,9 @@ function addBreaks(string $text): string
   return str_ireplace("\n", "<br>", $text);
 }
 
-// function orderByDate(array $array): void
-// {
-//   usort($array, function ($dateOne, $dateTwo) {
-//     return strtotime($dateTwo['publication_date']) - strtotime($dateOne['publication_date']);
-//   });
-// }
+function sortByDate(array &$array): void
+{
+  usort($array, function ($dateOne, $dateTwo) {
+    return $dateTwo['publication_date'] <=> $dateOne['publication_date'];
+  });
+}

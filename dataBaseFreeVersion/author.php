@@ -3,7 +3,9 @@
 require __DIR__ . '/functions.php';
 require __DIR__ . '/data.php';
 
-$author_id = $_GET['author_id'];
+sortByDate($articles);
+
+$authorId = $_GET['author_id'];
 
 ?>
 <!DOCTYPE html>
@@ -19,10 +21,10 @@ $author_id = $_GET['author_id'];
   <a href="index.php">
     <h1>Real Fake News</h1>
   </a>
-  <h2>Articles by <?= getAuthorName($authors, $author_id) ?></h2>
+  <h2>Articles by <?= getAuthorName($authors, $authorId) ?></h2>
   <section>
     <?php foreach ($articles as $article) : ?>
-      <?php if ((int)$author_id === (int)$article['author_id']) : ?>
+      <?php if ((int)$authorId === (int)$article['author_id']) : ?>
         <article>
           <a href="<?= generateURL('article', 'title', $article) ?>">
             <h2><?= $article['title'] ?></h2>

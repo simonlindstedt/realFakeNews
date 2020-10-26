@@ -2,7 +2,6 @@
 
 require __DIR__ . '/functions.php';
 require __DIR__ . '/data.php';
-$articles = array_reverse($articles); // For the dates to be in cron order
 $title = $_GET['title'];
 ?>
 <!DOCTYPE html>
