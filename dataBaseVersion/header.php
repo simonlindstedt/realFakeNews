@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <header>
-    <a href="index.php">
+  <a href="index.php">
+    <header>
       <h1>✝</h1>
-    </a>
-  </header>
+    </header>
+  </a>

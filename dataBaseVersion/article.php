@@ -27,7 +27,7 @@ require __DIR__ . '/header.php';
         </a>
         <p><?= addBreaks($article[0]['content']) ?></p>
         <p><?= $article[0]['publication_date'] ?></p>
-        <p>❤️<?= $article[0]['likes'] ?></p>
+        <p>🙏🏻<?= $article[0]['likes'] ?></p>
       </div>
     </article>
   </section>

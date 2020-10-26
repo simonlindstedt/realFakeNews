@@ -18,12 +18,14 @@ a:link, a:visited {
 }
 
 header {
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #000000;
   height: 56px;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   font-size: 1.5rem;
 }
 
@@ -37,10 +39,18 @@ section {
   grid-template-columns: 1fr;
 }
 
+.grid-item-wide {
+  grid-row-start: 1;
+  grid-row-end: -1;
+  text-align: center;
+}
+
 article {
+  width: 100%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 24px;
 }
 
 .text {
@@ -76,4 +86,9 @@ article p {
   font-size: 1.2rem;
   line-height: 1.7rem;
   margin-bottom: 1.5rem;
+}
+
+p.end-icon {
+  text-align: center;
+  margin: 0px;
 }
