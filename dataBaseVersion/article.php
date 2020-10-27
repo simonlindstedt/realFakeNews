@@ -28,6 +28,7 @@ require __DIR__ . '/header.php';
         <p><?= addBreaks($article[0]['content']) ?></p>
         <p><?= $article[0]['publication_date'] ?></p>
         <p>🙏🏻<?= $article[0]['likes'] ?></p>
+        <a href="index.php">← Return to frontpage</a>
       </div>
     </article>
   </section>
