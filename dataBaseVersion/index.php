@@ -19,7 +19,9 @@ require __DIR__ . '/header.php';
   <section class="grid">
     <?php foreach ($articles as $article) : ?>
       <div class="grid-item">
-        <img src="https://picsum.photos/id/<?= $article['author_id'] ?>/1000" />
+        <a href="<?= generateURL('article', 'ID', $article) ?>">
+          <img src="https://picsum.photos/id/<?= $article['author_id'] ?>/1000" />
+        </a>
         <div class="text">
           <a href="<?= generateURL('article', 'ID', $article) ?>">
             <h2><?= $article['title'] ?></h2>
