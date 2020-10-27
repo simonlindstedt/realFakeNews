@@ -11,6 +11,6 @@
 <body>
   <a href="index.php">
     <header>
-      <h1>✝</h1>
+      <h1 class="icon">✝</h1>
     </header>
   </a>

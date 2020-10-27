@@ -15,9 +15,10 @@ require __DIR__ . '/header.php';
 
 ?>
 <main>
-  <section>
+  <h1 class="page-title">Real Bible News</h1>
+  <section class="grid">
     <?php foreach ($articles as $article) : ?>
-      <article>
+      <div class="grid-item">
         <img src="https://picsum.photos/id/<?= $article['author_id'] ?>/1000" />
         <div class="text">
           <a href="<?= generateURL('article', 'ID', $article) ?>">
@@ -26,11 +27,11 @@ require __DIR__ . '/header.php';
           <a href="<?= generateURL('author', 'author_id', $article) ?>">
             <h3><?= getAuthorName($authors, (int)$article['author_id']) ?></h3>
           </a>
-          <p class="date"><?= $article['publication_date'] ?></p>
+          <p><?= $article['publication_date'] ?></p>
           <p><?= $article['content_descr'] ?></p>
           <p class="end-icon">☩</p>
         </div>
-      </article>
+      </div>
     <?php endforeach ?>
   </section>
 </main>

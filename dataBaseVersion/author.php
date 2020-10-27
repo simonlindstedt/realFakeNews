@@ -3,7 +3,7 @@
 require __DIR__ . '/database.php';
 require __DIR__ . '/functions.php';
 
-(int)$authorId = $_GET['author_id'];
+$authorId = $_GET['author_id'];
 
 $stmnt = $pdo->query("SELECT * FROM users WHERE ID = $authorId");
 
@@ -21,15 +21,15 @@ $otherAuthors = $stmnt->fetchAll(PDO::FETCH_ASSOC);
 
 require __DIR__ . '/header.php';
 
+// Can this be done more effecticly with just two sql-lines and an if-statement? 
+
 ?>
 <main>
-  <section>
-    <div class="grid-item-wide">
-      <h2 class="text">Articles by <?= $name ?></h2>
-    </div>
+  <h2 class="page-title">Articles by <?= $name ?></h2>
+  <section class="grid">
     <?php foreach ($articles as $article) : ?>
-      <article>
-        <img src=" https://picsum.photos/id/<?= $article['author_id'] ?>/250" />
+      <div class="grid-item">
+        <img src=" https://picsum.photos/id/<?= $article['author_id'] ?>/1000" />
         <div class="text">
           <a href="<?= generateURL('article', 'ID', $article) ?>">
             <h2><?= $article['title'] ?></h2>
@@ -37,24 +37,20 @@ require __DIR__ . '/header.php';
           <a href="<?= generateURL('author', 'author_id', $article) ?>">
             <h3><?= getAuthorName($author, (int)$article['author_id']) ?></h3>
           </a>
-          <p class="date"><?= $article['publication_date'] ?></p>
+          <p><?= $article['publication_date'] ?></p>
           <p><?= $article['content_descr'] ?></p>
           <p class="end-icon">☩</p>
         </div>
-      </article>
+      </div>
     <?php endforeach ?>
   </section>
-  <section>
-    <div class="grid-item-wide">
-      <h2 class="text">Other authors you might like</h2>
-    </div>
-    <div class="text">
-      <?php foreach ($otherAuthors as $author) : ?>
-        <a href="<?= generateURL('author', 'author_id', $author) ?>">
-          <h2><?= $author['name'] ?></h2>
-        </a>
-      <?php endforeach ?>
-    </div>
+  <section class="authors">
+    <h2>Other authors you might like</h2>
+    <?php foreach ($otherAuthors as $author) : ?>
+      <a href="<?= generateURL('author', 'author_id', $author) ?>">
+        <h3><?= $author['name'] ?></h3>
+      </a>
+    <?php endforeach ?>
   </section>
 </main>
 <?php require __DIR__ . '/footer.php'; ?>

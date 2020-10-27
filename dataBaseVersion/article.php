@@ -3,7 +3,7 @@
 require __DIR__ . '/database.php';
 require __DIR__ . '/functions.php';
 
-(int)$articleId = $_GET['ID'];
+$articleId = $_GET['ID'];
 
 $stmnt = $pdo->query("SELECT * FROM users");
 
@@ -19,7 +19,7 @@ require __DIR__ . '/header.php';
 <main>
   <section>
     <article>
-      <img src="https://picsum.photos/id/<?= $article[0]['author_id'] ?>/250" />
+      <img src="https://picsum.photos/id/<?= $article[0]['author_id'] ?>/1000" />
       <div class="text">
         <h2><?= $article[0]['title'] ?></h2>
         <a href="<?= generateURL('author', 'author_id', $article[0]) ?>">
@@ -32,7 +32,6 @@ require __DIR__ . '/header.php';
     </article>
   </section>
 </main>
-
 <?php
 require __DIR__ . '/footer.php';
 ?>
