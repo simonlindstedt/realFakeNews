@@ -3,26 +3,28 @@
 require __DIR__ . '/database.php';
 require __DIR__ . '/functions.php';
 
-$authorId = $_GET['author_id'];
+if (isset($_GET['author_id'])) {
 
-$stmnt = $pdo->query("SELECT * FROM users WHERE ID = $authorId");
+  $authorId = $_GET['author_id'];
 
-$author = $stmnt->fetchAll(PDO::FETCH_ASSOC);
+  $stmnt = $pdo->query("SELECT * FROM users WHERE ID = $authorId");
 
-$name = $author[0]['name'];
+  $author = $stmnt->fetchAll(PDO::FETCH_ASSOC);
 
-$stmnt = $pdo->query("SELECT * FROM posts WHERE author_id = $authorId ORDER BY publication_date DESC");
+  $name = $author[0]['name'];
 
-$articles = $stmnt->fetchAll(PDO::FETCH_ASSOC);
+  $stmnt = $pdo->query("SELECT * FROM posts WHERE author_id = $authorId ORDER BY publication_date DESC");
 
-$stmnt = $pdo->query("SELECT ID as author_id, name FROM users WHERE ID IS NOT $authorId ORDER BY name");
+  $articles = $stmnt->fetchAll(PDO::FETCH_ASSOC);
 
-$otherAuthors = $stmnt->fetchAll(PDO::FETCH_ASSOC);
+  $stmnt = $pdo->query("SELECT ID as author_id, name FROM users WHERE ID IS NOT $authorId ORDER BY name");
+
+  $otherAuthors = $stmnt->fetchAll(PDO::FETCH_ASSOC);
+
+  // Can this be done more effecticly with just two sql-lines and an if-statement? 
+}
 
 require __DIR__ . '/header.php';
-
-// Can this be done more effecticly with just two sql-lines and an if-statement? 
-
 ?>
 <main>
   <h2 class="page-title">Articles by <?= $name ?></h2>

@@ -3,18 +3,20 @@
 require __DIR__ . '/database.php';
 require __DIR__ . '/functions.php';
 
-$articleId = $_GET['ID'];
+if (isset($_GET['ID'])) {
 
-$stmnt = $pdo->query("SELECT * FROM users");
+  $articleId = $_GET['ID'];
 
-$authors = $stmnt->fetchAll(PDO::FETCH_ASSOC);
+  $stmnt = $pdo->query("SELECT * FROM users");
 
-$stmnt = $pdo->query("SELECT * FROM posts WHERE ID = $articleId");
+  $authors = $stmnt->fetchAll(PDO::FETCH_ASSOC);
 
-$article = $stmnt->fetchAll(PDO::FETCH_ASSOC);
+  $stmnt = $pdo->query("SELECT * FROM posts WHERE ID = $articleId");
+
+  $article = $stmnt->fetchAll(PDO::FETCH_ASSOC);
+}
 
 require __DIR__ . '/header.php';
-
 ?>
 <main>
   <section>

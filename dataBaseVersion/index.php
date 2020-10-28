@@ -12,7 +12,6 @@ $stmnt = $pdo->query("SELECT * FROM posts ORDER BY publication_date DESC");
 $articles = $stmnt->fetchAll(PDO::FETCH_ASSOC);
 
 require __DIR__ . '/header.php';
-
 ?>
 <main>
   <h1 class="page-title">Real Bible News</h1>
