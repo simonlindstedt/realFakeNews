@@ -32,7 +32,7 @@ require __DIR__ . '/header.php';
     <?php foreach ($articles as $article) : ?>
       <div class="grid-item">
         <a href="<?= generateURL('article', 'ID', $article) ?>">
-          <img src=" https://picsum.photos/id/<?= $article['author_id'] ?>/1000" />
+          <img src=" https://picsum.photos/id/<?= $article['author_id'] ?>/1000" alt="currently a temporary picture of a laptop, probably" />
         </a>
         <div class="text">
           <a href="<?= generateURL('article', 'ID', $article) ?>">
