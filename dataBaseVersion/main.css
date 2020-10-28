@@ -46,6 +46,7 @@ footer {
 
 .page-title {
   padding: 0px 8px;
+  text-align: center;
 }
 
 .icon {
@@ -98,7 +99,7 @@ article img {
   }
 
   .page-title {
-    text-align: center;
+    text-align: left;
   }
   
   .grid {
