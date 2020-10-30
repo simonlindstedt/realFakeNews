@@ -8,7 +8,9 @@ To install and try it out, you need to do the following:
 
 -   Launch a php server from either /dataBaseVersion or /dataBaseFreeVersion with the following command
 
+```sh
 php -S localhost:8000
+```
 
 -   (I would recommend the /dataBaseVersion)
 
