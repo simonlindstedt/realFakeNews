@@ -19,10 +19,6 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 header {
   position: sticky;
   top: 0;
@@ -58,6 +54,15 @@ footer {
 
 .text {
   padding: 0px 8px;
+}
+
+.text h2 {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+.text h3 {
+  margin-top: 8px;
 }
 
 article,
@@ -118,6 +123,11 @@ article img {
     max-height: 45vh;
     object-fit: cover;
   }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (hover: hover) {
@@ -125,5 +135,8 @@ article img {
     transition-duration: 0.1s;
     transform: scale(1.01);
     box-shadow: 4px 4px 10px grey;
+  }
+  a:hover {
+    text-decoration: underline;
   }
 }
