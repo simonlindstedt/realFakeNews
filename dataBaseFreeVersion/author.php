@@ -5,41 +5,37 @@ require __DIR__ . '/data.php';
 
 sortByDate($articles);
 
-$authorId = $_GET['author_id'];
+if (isset($_GET['author_id'])) {
+  $authorId = $_GET['author_id'];
+}
 
+require __DIR__ . '/header.php';
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Fake News</title>
-</head>
-
-<body>
-  <a href="index.php">
-    <h1>Real Fake News</h1>
-  </a>
-  <h2>Articles by <?= getAuthorName($authors, $authorId) ?></h2>
-  <section>
+<main>
+  <h2 class="page-title">Articles by <?= getAuthorName($authors, $authorId) ?></h2>
+  <section class="grid">
     <?php foreach ($articles as $article) : ?>
       <?php if ((int)$authorId === (int)$article['author_id']) : ?>
-        <article>
+        <div class="grid-item">
           <a href="<?= generateURL('article', 'title', $article) ?>">
-            <h2><?= $article['title'] ?></h2>
-          </a>
-          <img src="https://picsum.photos/id/5/250" />
-          <a href="<?= generateURL('author', 'author_id', $article) ?>">
-            <h3><?= getAuthorName($authors, $article['author_id']) ?></h3>
-          </a>
-          <p><?= $article['content_descr'] ?></p>
-          <p><?= $article['publication_date'] ?></p>
-          <p><?= $article['likes'] ?></p>
-        </article>
+            <img src="https://picsum.photos/id/5/250" /></a>
+          <div class="text">
+            <a href="<?= generateURL('article', 'title', $article) ?>">
+              <h2><?= $article['title'] ?></h2>
+            </a>
+            <a href="<?= generateURL('author', 'author_id', $article) ?>">
+              <h3><?= getAuthorName($authors, $article['author_id']) ?></h3>
+            </a>
+            <em><?= $article['publication_date'] ?></em>
+            <p><?= $article['content_descr'] ?></p>
+            <p class="end-icon">☩</p>
+          </div>
+        </div class="grid-item">
       <?php endif ?>
     <?php endforeach ?>
   </section>
-</body>
-
-</html>
+</main>
+<?php
+require __DIR__ . '/footer.php';
+?>

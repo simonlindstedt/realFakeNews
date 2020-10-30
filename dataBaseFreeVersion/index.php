@@ -1,40 +1,38 @@
 <?php
 
 require __DIR__ . '/functions.php';
+
 require __DIR__ . '/data.php';
 
 sortByDate($articles);
 
+require __DIR__ . '/header.php';
+
 ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Fake News</title>
-</head>
-
-<body>
-  <a href="index.php">
-    <h1>Real Fake News</h1>
-  </a>
-  <section>
+<main>
+  <h1 class="page-title">Real Bible News</h1>
+  <section class="grid">
     <?php foreach ($articles as $article) : ?>
-      <article>
+      <div class="grid-item">
         <a href="<?= generateURL('article', 'title', $article) ?>">
-          <h2><?= $article['title'] ?></h2>
+          <img src="https://picsum.photos/id/5/250" />
         </a>
-        <img src="https://picsum.photos/id/5/250" />
-        <a href="<?= generateURL('author', 'author_id', $article) ?>">
-          <h3><?= getAuthorName($authors, $article['author_id']) ?></h3>
-        </a>
-        <p><?= $article['content_descr'] ?></p>
-        <p><?= $article['publication_date'] ?></p>
-        <p><?= $article['likes'] ?></p>
-      </article>
+        <div class="text">
+          <a href="<?= generateURL('article', 'title', $article) ?>">
+            <h2><?= $article['title'] ?></h2>
+          </a>
+          <a href="<?= generateURL('author', 'author_id', $article) ?>">
+            <h3><?= getAuthorName($authors, $article['author_id']) ?></h3>
+          </a>
+          <p><?= $article['publication_date'] ?></p>
+          <p><?= $article['content_descr'] ?></p>
+          <p class="end-icon">☩</p>
+        </div>
+      </div>
     <?php endforeach ?>
   </section>
-</body>
-
-</html>
+</main>
+<?php
+require __DIR__ . '/footer.php';
+?>

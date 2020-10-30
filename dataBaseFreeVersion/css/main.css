@@ -37,10 +37,10 @@ header {
 
 footer {
 	display: flex;
-	width: 100%;
-	margin-top: 24px;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	margin-top: 24px;
 	background-color: #000000;
 	height: 56px;
 	color: lightgoldenrodyellow;
