@@ -1,3 +1,5 @@
+![image](https://media.giphy.com/media/RgplmMbj7q4Vy/giphy.gif)
+
 # Hello you!
 
 To install and try it out, you need to do the following:
