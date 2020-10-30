@@ -14,10 +14,14 @@ $articles = $stmnt->fetchAll(PDO::FETCH_ASSOC);
 
 require __DIR__ . '/header.php';
 ?>
+
 <main>
   <h1 class="page-title">Real Bible News</h1>
   <section class="grid">
-    <?php foreach ($articles as $article) : ?>
+    <?php foreach ($articles as $article) :
+      //Loop that generates the card-view 
+    ?>
+
       <div class="grid-item">
         <a href="<?= generateURL('article', 'ID', $article) ?>">
           <img src="https://picsum.photos/id/<?= $article['author_id'] ?>/1000" alt="currently a temporary picture of a laptop, probably" />
@@ -34,9 +38,11 @@ require __DIR__ . '/header.php';
           <p class="end-icon">☩</p>
         </div>
       </div>
+
     <?php endforeach ?>
   </section>
 </main>
+
 <?php
 require __DIR__ . '/footer.php';
 ?>

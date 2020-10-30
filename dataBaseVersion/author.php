@@ -27,10 +27,13 @@ if (isset($_GET['author_id'])) {
 
 require __DIR__ . '/header.php';
 ?>
+
 <main>
   <h2 class="page-title">Articles by <?= $name ?></h2>
   <section class="grid">
-    <?php foreach ($articles as $article) : ?>
+    <?php foreach ($articles as $article) :
+      //Loop for printing all of the articles written by $authorId
+    ?>
       <div class="grid-item">
         <a href="<?= generateURL('article', 'ID', $article) ?>">
           <img src=" https://picsum.photos/id/<?= $article['author_id'] ?>/1000" alt="currently a temporary picture of a laptop, probably" />
@@ -51,11 +54,16 @@ require __DIR__ . '/header.php';
   </section>
   <section class="authors">
     <h2>Other authors you might like</h2>
-    <?php foreach ($otherAuthors as $author) : ?>
+    <?php foreach ($otherAuthors as $author) :
+      //Loop for generating all of the other authors as links
+    ?>
       <a href="<?= generateURL('author', 'author_id', $author) ?>">
         <h3><?= $author['name'] ?></h3>
       </a>
     <?php endforeach ?>
   </section>
 </main>
-<?php require __DIR__ . '/footer.php'; ?>
+
+<?php
+require __DIR__ . '/footer.php';
+?>

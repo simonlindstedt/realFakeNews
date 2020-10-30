@@ -2,7 +2,15 @@
 
 To install and try it out, you need to do the following:
 
+-   First of all, clone this repo at
+
+```sh
+git clone https://github.com/simonlindstedt/realFakeNews.git
+```
+
 -   Have PHP installed (https://www.php.net/)
+
+-   Also SQLite for the version of the site with a database
 
 -   Navigate to the root of this directory in your terminal of choice
 
@@ -20,7 +28,7 @@ php -S localhost:8000
 
 ## About this project
 
-This is the current result of our first assignment at YRGO. This list might be changed later if i decide to keep adding to this project.
+This is the result of our first assignment at YRGO. This list might be changed later if i decide to keep adding to this project.
 
 ## Current feature list
 
@@ -41,3 +49,7 @@ This is the current result of our first assignment at YRGO. This list might be c
 -   Rickard Segerkvist
 
 -   Agnes Binett
+
+## Code Review
+
+by Lucas Jirkhem Nordeborg
