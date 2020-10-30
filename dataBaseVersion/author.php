@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . '/database.php';
+
 require __DIR__ . '/functions.php';
 
 if (isset($_GET['author_id'])) {

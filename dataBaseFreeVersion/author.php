@@ -16,6 +16,7 @@ require __DIR__ . '/header.php';
   <h2 class="page-title">Articles by <?= getAuthorName($authors, $authorId) ?></h2>
   <section class="grid">
     <?php foreach ($articles as $article) : ?>
+
       <?php if ((int)$authorId === (int)$article['author_id']) : ?>
         <div class="grid-item">
           <a href="<?= generateURL('article', 'title', $article) ?>">
