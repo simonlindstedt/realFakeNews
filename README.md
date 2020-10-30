@@ -20,7 +20,7 @@ git clone https://github.com/simonlindstedt/realFakeNews.git
 php -S localhost:8000
 ```
 
--   (I would recommend the /dataBaseVersion)
+-   (I would recommend the /dataBaseVersion, the /dataBaseFreeVersion is more of a backup in case of trouble with the sqlite-drivers)
 
 -   Then open up your web browser och choice and enter localhost:8000 as the URL
 
