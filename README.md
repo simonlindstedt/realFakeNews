@@ -2,7 +2,7 @@
 
 To install and try it out, you need to do the following:
 
--   First of all, clone this repo at
+-   First of all, clone this repo from
 
 ```sh
 git clone https://github.com/simonlindstedt/realFakeNews.git
