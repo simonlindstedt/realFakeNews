@@ -1,4 +1,4 @@
-![image](https://media.giphy.com/media/RgplmMbj7q4Vy/giphy.gif)
+<img src="https://media.giphy.com/media/RgplmMbj7q4Vy/giphy.gif" style="width: 100%">
 
 # Hello you!
 
