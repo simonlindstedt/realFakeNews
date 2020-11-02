@@ -28,6 +28,7 @@ require __DIR__ . '/header.php';
             <a href="<?= generateURL('author', 'author_id', $article) ?>">
               <h3><?= getAuthorName($authors, $article['author_id']) ?></h3>
             </a>
+            <p>🙏🏻 <?= $article['likes'] + rand(10, 60) ?></p>
             <em><?= $article['publication_date'] ?></em>
             <p><?= $article['content_descr'] ?></p>
             <p class="end-icon">☩</p>
