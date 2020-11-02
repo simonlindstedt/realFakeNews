@@ -55,3 +55,12 @@ This is the result of our first assignment at YRGO. This list might be changed l
 ## Code Review
 
 by Lucas Jirkhem Nordeborg
+
+1. Perhaps move the first php code-block from index.php to another location, eg database.php?
+2. Maybe increase the grid gap to make the box-shadow more highlighted
+3. Hovered elements (articles) can sometimes be framed over the fixed banner, adress z-index for the banner in css could do it!
+4. Add type declaration in article.php, author.php and index.php
+5. In functions.php the sortByDate-function is returning void , but should it not be an int?
+
+Overall a great project written in clear and easy-to-read code. Impressive design, great use of grid and mediaqueries. Everything works flawlessly with and
+without the database activated. Great job!
